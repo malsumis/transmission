@@ -49,13 +49,13 @@ static void tier_build_log_name (const struct tr_tier * tier,
 enum
 {
     /* unless the tracker says otherwise, rescrape this frequently */
-    DEFAULT_SCRAPE_INTERVAL_SEC = (60 * 30),
+    DEFAULT_SCRAPE_INTERVAL_SEC = (60 * 30 * 8),
 
     /* unless the tracker says otherwise, this is the announce interval */
-    DEFAULT_ANNOUNCE_INTERVAL_SEC = (60 * 10),
+    DEFAULT_ANNOUNCE_INTERVAL_SEC = (60 * 10 * 4),
 
     /* unless the tracker says otherwise, this is the announce min_interval */
-    DEFAULT_ANNOUNCE_MIN_INTERVAL_SEC = (60 * 2),
+    DEFAULT_ANNOUNCE_MIN_INTERVAL_SEC = (60 * 2 * 4),
 
     /* how many web tasks we allow at one time */
     MAX_CONCURRENT_TASKS = 48,

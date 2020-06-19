@@ -58,7 +58,7 @@ enum
     DEFAULT_ANNOUNCE_MIN_INTERVAL_SEC = (60 * 2 * 4),
 
     /* how many web tasks we allow at one time */
-    MAX_CONCURRENT_TASKS = 48,
+    MAX_CONCURRENT_TASKS = 1000,
 
     /* the value of the 'numwant' argument passed in tracker requests. */
     NUMWANT = 80,

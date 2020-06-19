@@ -963,7 +963,7 @@ torrentInit (tr_torrent * tor, const tr_ctor * ctor)
 
   tor->tiers = tr_announcerAddTorrent (tor, onTrackerResponse, NULL);
 
-  if (isNewTorrent)
+  if (isNewTorrent && !(loaded & TR_FR_PROGRESS))
     {
       tor->startAfterVerify = doStart;
       tr_torrentVerify (tor, NULL, NULL);
